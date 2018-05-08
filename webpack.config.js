@@ -1,9 +1,18 @@
-const path = require('path');
+const path = require('path')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const ISPROD = JSON.parse(process.env.PROD_ENV)
+
+const extractSass = new ExtractTextPlugin({
+  filename: "bundle.css",
+  disable: process.env.NODE_ENV === "development"
+})
 
 module.exports = {
+  mode: ISPROD ? 'production' : 'development',
   entry: './src/index.js',
+  watch: true,
   output: {
-    filename: 'bundle.min.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'build')
   },
   module: {
@@ -11,16 +20,25 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: [
-          {
+        use: [{
             loader: 'babel-loader',
-            options: {
-              presets: ['react']
-            }
-          }
-        ]
+            options: { presets: ['react'] }
+          }]
+      },
+      {
+        test: /\.scss$/,
+        use: extractSass.extract({
+          use: [
+            {loader: "css-loader"}, 
+            {loader: "sass-loader"}
+          ],
+          // use style-loader in development
+          fallback: "style-loader"
+        })
       }
     ]
   },
-  watch: true
-};
+  plugins: [
+    extractSass
+  ]
+}

@@ -4,8 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "devbuild": "SET PROD_ENV=0 && webpack --config webpack.config.js",
-    "prodbuild": "SET PROD_ENV=1 && webpack --config webpack.config.js"
+    "start": "SET PROD_ENV=0 && webpack --config webpack.config.js",
+    "prodbuild": "SET PROD_ENV=1 && webpack --config webpack.config.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -15,12 +16,15 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "jest": "^22.4.3",
     "node-sass": "^4.9.0",
+    "react-test-renderer": "^16.3.2",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "webpack": "^4.7.0",

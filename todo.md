@@ -1,8 +1,10 @@
-1. jest
-2. index to build stream
-3. minify css in prod state
+- index to build stream
+- minify css in prod state
+- webpack-dev-server
+- yarn?
 
 done:
-1. scss
-2. prod and dev builds
-3. first component
+- scss
+- prod and dev builds
+- first component
+- jest

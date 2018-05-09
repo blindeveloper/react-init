@@ -1,17 +1,19 @@
 
 import React from 'react'
 import AppTemplate from './app.jsx'
-import './app.scss'
 
 class App extends React.Component {
   constructor(){
     super()
   }
 
+  sum(a, b) {
+    return a + b;
+  }
+
   render() {
-    return <AppTemplate name='Mike'/>
+    return (<AppTemplate name='Mike'/>)
   }
 }
 
 export default App
-

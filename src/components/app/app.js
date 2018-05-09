@@ -1,6 +1,6 @@
 
 import React from 'react'
-import AppTemplate from './app.jsx'
+import AppTemplate from './app.tmp.jsx'
 
 class App extends React.Component {
   constructor(){

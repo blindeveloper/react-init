@@ -1,6 +1,7 @@
 const path = require('path')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const ISPROD = JSON.parse(process.env.PROD_ENV)
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const extractSass = new ExtractTextPlugin({
   filename: "bundle.css",
@@ -39,6 +40,10 @@ module.exports = {
     ]
   },
   plugins: [
-    extractSass
+    extractSass,
+    new HtmlWebpackPlugin({
+      title:'React init',
+      template: './src/index.html'
+    })
   ]
 }

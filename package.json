@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "SET PROD_ENV=0 && webpack-dev-server --open",
-    "prodbuild": "SET PROD_ENV=1 && webpack-dev-server --open",
+    "build": "SET PROD_ENV=1 && webpack --config webpack.config.js",
     "test": "jest"
   },
   "author": "",

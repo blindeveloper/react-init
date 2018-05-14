@@ -1,5 +1,4 @@
-- yarn?
-
+- redux
 done:
 - source map setup
 - minify css in prod state

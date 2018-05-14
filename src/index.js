@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import '../src/index.scss'
-import App from './components/app/app'
+import App from './modules/app/app'
 
 ReactDOM.render(<div>
     Hello, from index.js file!<br/>

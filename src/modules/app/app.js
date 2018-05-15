@@ -1,6 +1,6 @@
 import React from 'react'
 import AppTemplate from './app.tmp.jsx'
-import ToDoList from '../to-do-list/to-do-list'
+import ToDoList from '../to-do-list/to-do-list.component'
 
 class App extends React.Component {
   constructor(){

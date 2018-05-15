@@ -1,6 +1,6 @@
-
 import React from 'react'
 import AppTemplate from './app.tmp.jsx'
+import ToDoList from '../to-do-list/to-do-list'
 
 class App extends React.Component {
   constructor(){
@@ -12,7 +12,12 @@ class App extends React.Component {
   }
 
   render() {
-    return (<AppTemplate name='Mike'/>)
+    return (
+      <div>
+        <AppTemplate name='Mike'/>
+        <ToDoList/>
+      </div>
+    )
   }
 }
 

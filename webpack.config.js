@@ -6,7 +6,7 @@ const extractSass = new ExtractTextPlugin({filename: 'bundle.min.css'})
 
 module.exports = {
   mode: ISPROD ? 'production' : 'development',
-  entry: './src/index.js',
+  entry: './src/app.js',
   watch: ISPROD ? false : true,
   devtool: ISPROD ? false : 'source-map',
   output: {

@@ -3,8 +3,11 @@ import AppTemplate from './app.tmp.jsx'
 import ToDoList from '../to-do-list/to-do-list.component'
 
 class App extends React.Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
+    console.log('====================================');
+    console.log('props: ', props);
+    console.log('====================================');
   }
 
   sum(a, b) {

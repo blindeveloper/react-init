@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "SET PROD_ENV=0 && webpack-dev-server --open",
+    "start": "npm i && SET PROD_ENV=0 && webpack-dev-server --open",
     "build": "SET PROD_ENV=1 && webpack --config webpack.config.js",
     "test": "jest"
   },

@@ -1,4 +1,5 @@
 todo:
+- continuous integration in github https://github.com/marketplace/category/continuous-integration
 - react-router-redux?
 - react-router?
 - setup debugger

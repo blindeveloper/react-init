@@ -1,11 +1,12 @@
 todo:
-- continuous integration in github https://github.com/marketplace/category/continuous-integration
+- routing
 - react-router-redux?
 - react-router?
-- setup debugger
+- continuous integration in github https://github.com/marketplace/category/continuous-integration
 - resource API
-- routing
 done:
+- eslint
+- setup debugger
 - react-redux?***connection betwin react and redux
 - prop-types***defining of types for props, similar to ts interaces
 - redux***single state as presentation of whole app

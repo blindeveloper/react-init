@@ -29,9 +29,6 @@ class ToDoList extends React.Component {
 
   handleChange() {
     this.setState(combineReducers(this.getReducersList()))
-    console.log('====================================');
-    console.log('this.state: ', this.store.getState());
-    console.log('====================================');
   }
 
   setFilter(filterName) {
@@ -41,25 +38,25 @@ class ToDoList extends React.Component {
 
   render(){
     return (
-    <section>
-      <input type='text' ref = {node => {this.input = node}}/>
-      <button onClick={() => this.addNewToDoItem()}>+</button>
-      {this.store.getState().todoList.length ? 
-        <div>
-          <button onClick={() => this.setFilter('ALL')}>All</button>
-          <button onClick={() => this.setFilter('COMPLETED')}>Completed</button>
-          <button onClick={() => this.setFilter('ACTUAL')}>Actual</button>
-        </div> : null}
-     <ul>
-       {this.store.getState()
-       .todoList.map(todoItem => 
-       <li key={todoItem.id} 
-          style = {todoItem.isCompleted ? {textDecoration:'line-through'} : {textDecoration:''}}
-          onClick = {() => this.toggleTodoStatus(todoItem)}>
-         {`${todoItem.text} ${todoItem.isCompleted}`}
-       </li>)}
-     </ul>
-    </section>
+      <section>
+        <input type='text' ref = {node => {this.input = node}}/>
+        <button onClick={() => this.addNewToDoItem()}>+</button>
+        {this.store.getState().todoList.length ? 
+          <div>
+            <button onClick={() => this.setFilter('ALL')}>All</button>
+            <button onClick={() => this.setFilter('COMPLETED')}>Completed</button>
+            <button onClick={() => this.setFilter('ACTUAL')}>Actual</button>
+          </div> : null}
+        <ul>
+          {this.store.getState()
+            .todoList.map(todoItem => 
+              <li key={todoItem.id} 
+                style = {todoItem.isCompleted ? {textDecoration:'line-through'} : {textDecoration:''}}
+                onClick = {() => this.toggleTodoStatus(todoItem)}>
+                {`${todoItem.text} ${todoItem.isCompleted}`}
+              </li>)}
+        </ul>
+      </section>
     )
   }
 }

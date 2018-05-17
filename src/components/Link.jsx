@@ -5,7 +5,7 @@ const Link = ({active, onClick, children}) => (
   <button onClick={onClick} disabled={active}>{children}</button>
 )
 
-PropTypes.Link= {
+Link.propTypes = {
   active: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
   children: PropTypes.string.isRequired

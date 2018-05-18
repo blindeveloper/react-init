@@ -19,9 +19,9 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [{
-            loader: 'babel-loader',
-            options: { presets: ['react'] }
-          }]
+          loader: 'babel-loader',
+          options: { presets: ['react'] }
+        }]
       },
       {
         test: /\.scss$/,
@@ -42,5 +42,8 @@ module.exports = {
       title:'React init',
       template: path.resolve(__dirname, 'src/index.html')
     })
-  ]
+  ],
+  devServer: {
+    historyApiFallback: true
+  }
 }

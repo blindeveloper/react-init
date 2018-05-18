@@ -1,13 +1,14 @@
 import React from 'react'
-import Footer from './Footer.jsx'
-import AddTodo from '../containers/AddTodo.jsx'
-import VisibleTodoList from '../containers/VisibleTodoList.jsx'
+import { Switch, Route } from 'react-router-dom'
+import Navigation from '../components/Navigation.jsx'
+import routes from '../routes'
 
 const App = () => (
   <div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
+    <Navigation/>
+    <Switch>
+      {routes.map(( route, i ) => <Route key={i} {...route}/>)}
+    </Switch>
   </div>
 )
 

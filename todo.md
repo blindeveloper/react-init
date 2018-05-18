@@ -1,10 +1,12 @@
 todo:
 - routing
 - react-router-redux?
-- react-router?
 - continuous integration in github https://github.com/marketplace/category/continuous-integration
 - resource API
+- backend API (nodejs) 
 done:
+- react-router?***routing in react
+- react-router-dom?***routing for web app, depends on react-router
 - eslint
 - setup debugger
 - react-redux?***connection betwin react and redux

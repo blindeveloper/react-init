@@ -8,7 +8,8 @@ const Link = ({active, onClick, children}) => (
 Link.propTypes = {
   active: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  filter: PropTypes.string.isRequired
 }
 
 export default Link

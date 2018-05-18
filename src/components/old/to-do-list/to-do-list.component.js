@@ -1,6 +1,6 @@
 import React from 'react'
 import {createStore, combineReducers} from 'redux'
-import ToDoReducers from '../../reducers'
+import ToDoReducers from '../../../reducers'
 
 class ToDoList extends React.Component {
   constructor(props) {

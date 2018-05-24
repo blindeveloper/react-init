@@ -7,7 +7,8 @@
     "start": "npm i && SET PROD_ENV=0 && webpack-dev-server --open",
     "build": "SET PROD_ENV=1 && webpack --config webpack.config.js",
     "test": "jest",
-    "eslint": "./node_modules/.bin/eslint --ext .js --ext .jsx src --fix"
+    "eslint": "./node_modules/.bin/eslint --ext .js --ext .jsx src --fix",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,8 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.5",
+    "@storybook/react": "^v4.0.0-alpha.7",
     "babel-core": "^6.26.3",
     "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.4",

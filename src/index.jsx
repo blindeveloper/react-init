@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { createStore } from 'redux'
 import Root from './components/Root.jsx'
-import rootReducers from './reducers'
+import rootReducers from './components/organizms/todo/reducers'
 
 import '../src/main.scss'
 

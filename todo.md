@@ -1,9 +1,11 @@
 todo:
 - react-router-redux?
 - continuous integration in github https://github.com/marketplace/category/continuous-integration
-- resource API
 - backend API (nodejs) 
 done:
+- to modules fs
+- storybook
+- resource API
 - routing
 - react-router?***routing in react
 - react-router-dom?***routing for web app, depends on react-router

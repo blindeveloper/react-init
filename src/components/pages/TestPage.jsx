@@ -1,5 +1,5 @@
 import React from 'react'
-import resource from '../resource/api'
+import resource from '../organizms/todo/resource/api'
 
 const TestPage = () => (<h2>Test page</h2>)
 

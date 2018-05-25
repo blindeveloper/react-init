@@ -1,9 +1,9 @@
 todo:
-- to modules fs
 - react-router-redux?
 - continuous integration in github https://github.com/marketplace/category/continuous-integration
 - backend API (nodejs) 
 done:
+- to modules fs
 - storybook
 - resource API
 - routing

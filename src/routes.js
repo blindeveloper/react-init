@@ -1,5 +1,5 @@
-import TodoPage from './pages/TodoPage.jsx'
-import TestPage from './pages/TestPage.jsx'
+import TodoPage from './components/pages/TodoPage.jsx'
+import TestPage from './components/pages/TestPage.jsx'
 
 const routes = [
   {

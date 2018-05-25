@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Navigation from '../components/Navigation.jsx'
+import Navigation from '../components/organizms/Navigation.jsx'
 import routes from '../routes'
 
 const App = () => (

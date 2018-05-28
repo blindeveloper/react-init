@@ -8,18 +8,14 @@ const AddTodo = ({ dispatch }) => {
   let input
 
   return (
-    <div>
-      <form onSubmit={e => {
-        e.preventDefault()
-        if (!input.value.trim()) {
-          return
-        }
-        dispatch(addTodo(input.value))
-        input.value = ''
-      }}>
-        <OneLineForm btnType="submit" refType={node => input = node}/>
-      </form>
-    </div>
+    <OneLineForm btnType="submit" refType={node => input = node} submitFunction={e => {
+      e.preventDefault()
+      if (!input.value.trim()) {
+        return
+      }
+      dispatch(addTodo(input.value))
+      input.value = ''
+    }}/>
   )
 }
 

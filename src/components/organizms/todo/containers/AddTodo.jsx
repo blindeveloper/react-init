@@ -2,6 +2,7 @@ import React from 'react'
 import propTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
+import OneLineForm from '../../../moleculs/OneLineForm/index.jsx'
 
 const AddTodo = ({ dispatch }) => {
   let input
@@ -16,10 +17,7 @@ const AddTodo = ({ dispatch }) => {
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
-        <input ref={node => input = node} />
-        <button type="submit">
-          Add Todo
-        </button>
+        <OneLineForm btnType="submit" refType={node => input = node}/>
       </form>
     </div>
   )

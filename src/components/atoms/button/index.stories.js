@@ -5,11 +5,11 @@ import Button from './'
 
 storiesOf('Button', module)
   .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+    <Button active={true} onClick={action('clicked')}>Hello Button</Button>
   ))
   .add('with some emoji', () => (
-    <Button onClick={action('clicked')}><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
+    <Button active={true} onClick={action('clicked')}><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
   )) 
   .add('disabled', () => (
-    <Button active={true}>disabled</Button>
+    <Button active={false}>disabled</Button>
   )) 

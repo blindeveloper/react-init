@@ -1,7 +1,7 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ISPROD = JSON.parse(process.env.PROD_ENV)
+const ISPROD = process.env.IS_PROD_ENV ? JSON.parse(process.env.IS_PROD_ENV) : 0
 const extractSass = new ExtractTextPlugin({filename: 'bundle.min.css'})
 
 module.exports = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './todo.scss'
+// import './todo.scss'
 
 const Todo = ({ onClick, completed, text }) => (
   <li onClick={onClick} 

@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "npm i && SET PROD_ENV=0 && webpack-dev-server --open",
+    "start": "npm i && webpack-dev-server --open",
     "build": "SET PROD_ENV=1 && webpack --config webpack.config.js",
     "test": "jest",
     "eslint": "./node_modules/.bin/eslint --ext .js --ext .jsx src --fix",

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const addNew = ({addNewSwimmerAct}) => {
   let input
@@ -18,4 +19,9 @@ const addNew = ({addNewSwimmerAct}) => {
     </div>
   )
 }
+
+addNew.propTypes = {
+  addNewSwimmerAct: PropTypes.func.isRequired
+}
+
 export default addNew

@@ -40,7 +40,7 @@ module.exports = {
     extractSass,
     new HtmlWebpackPlugin({
       title:'React init',
-      template: path.resolve(__dirname, 'src/components/pages/index.html')
+      template: path.resolve(__dirname, 'src/index.html')
     })
   ],
   devServer: {

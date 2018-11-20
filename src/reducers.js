@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux'
-import todos from './components/organizms/todo/reducers/todos'
-import visibilityFilter from './components/organizms/todo/reducers/visibilityFilter'
+import swimmersListReducer from './modules/swimmers/reducers/swimmers.list.reducer'
 
 export default combineReducers({
-  todos,
-  visibilityFilter
+  swimmersListReducer
 })

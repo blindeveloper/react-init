@@ -4,11 +4,11 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --open",
     "buildwin": "SET PROD_ENV=1 && ./node_modules/webpack/bin/webpack.js --config webpack.config.js",
     "buildmac": "export PROD_ENV=1 && ./node_modules/webpack/bin/webpack.js --config webpack.config.js",
     "test": "jest",
-    "eslint": "./node_modules/.bin/eslint --ext .js --ext .jsx src --fix",
+    "eslint": "node ./node_modules/.bin/eslint --ext .js --ext .jsx src --fix",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "author": "",
